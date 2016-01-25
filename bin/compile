@@ -30,7 +30,7 @@ if [ ! -f "${CACHE_DIR}/${HAPROXY_DIR}/haproxy" ]; then
 fi
 
 echo "Port: ${PORT}"
-echo "Port: ${VCAP_APP_PORT}
+echo "Port: ${VCAP_APP_PORT}"
 
 
 cp ${CACHE_DIR}/${HAPROXY_DIR}/haproxy ${BUILD_DIR}/haproxy || exit 6
