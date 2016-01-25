@@ -29,8 +29,8 @@ if [ ! -f "${CACHE_DIR}/${HAPROXY_DIR}/haproxy" ]; then
   make TARGET=linux2628 USE_STATIC_PCRE=1 || exit 5
 fi
 
-echo ${PORT}
-echo ${VCAP_APP_PORT}
+echo "Port: ${PORT}"
+echo "Port: ${VCAP_APP_PORT}
 
 
 cp ${CACHE_DIR}/${HAPROXY_DIR}/haproxy ${BUILD_DIR}/haproxy || exit 6
