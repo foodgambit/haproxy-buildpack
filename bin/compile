@@ -31,6 +31,7 @@ fi
 
 echo "Port: ${PORT}"
 echo "Port: ${VCAP_APP_PORT}"
+echo "BUILD_DIR: ${BUILD_DIR}"
 
 
 cp ${CACHE_DIR}/${HAPROXY_DIR}/haproxy ${BUILD_DIR}/haproxy || exit 6
